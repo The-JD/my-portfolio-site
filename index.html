@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>James Dev - Front End Developer & Graphic Designer </title>
+    <meta name="description"
+        content="Portfolio website of James Dev John, experienced front-end Angular developer and graphic designer">
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="James Dev - Front End Developer & Graphic Designer" />
+    <meta property="og:description"
+        content="Portfolio website of James Dev John, experienced front-end Angular developer and graphic designer" />
+    <meta property="og:site_name" content="James Dev - Front End Developer & Graphic Designer" />
+    <meta property="article:publisher" content="James Dev John" />
+    <meta property="og:image" content="" />
+    <meta name="author" content="James Dev John" />
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="overlay"></div>
+
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <div class="sidebar-header">
+                    <div class="sidebar-brand">
+                        <div class="card-headline"><a href="#">JAMES DEV</a></div>
+                        <div class="colorWhite small-font">Front End Developer</div>
+                    </div>
+                </div>
+                <div class="menuBar" id="menuBar"></div>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <div class="container">
+                <div id="about" class="padding-20">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="text-center padding-10">
+                                <div class="padding-10">
+                                    <img class="img" src="assets/images/jamesdev.jpg" height="150">
+                                </div>
+                                <h4>Hi, I'm</h4>
+                                <h1 class="card-headline">James Dev John</h1>
+                                <h6>Front-End Developer, expertised in Angular Framework</h6>
+                                <h6>Graphic & UI/UX Designer</h6>
+                            </div>
+                            <div class="row text-center">
+                                <div id="introContent"></div>
+                            </div>
+                            <div class="row text-center padding-top-20">
+                                <div id="socialLinksContent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="experience" class="padding-20">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center card-headline">
+                            <h3><i class="fa fa-briefcase"></i> Experience</h3>
+                        </div>
+                        <div class="row" id="experienceContent">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills" class="padding-20">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center card-headline">
+                            <h3><i class="fa fa-stream"></i> Skills</h3>
+                        </div>
+                        <div class="text-center">
+                            <div class="padding-vertical-10">
+                                <p class="small"><strong> HTML & CSS Frameworks </strong></p>
+                                <div class="row padding-10" id="frontEndTechContent"></div>
+                            </div>
+
+                            <div class="padding-vertical-10">
+                                <p class="small"><strong> Javascript & Javascript Frameworks </strong></p>
+                                <div class="row  padding-10" id="jsTechContent"></div>
+                            </div>
+
+                            <div class="padding-vertical-10">
+                                <p class="small"><strong> Database </strong></p>
+                                <div class="row  padding-10" id="backendTechContent"></div>
+                            </div>
+
+                            <div class="padding-vertical-10">
+                                <p class="small"><strong> Other Tools </strong></p>
+                                <div class="row  padding-10" id="otherTechContent"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="education" class="padding-20">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center card-headline">
+                            <h3><i class="fa fa-graduation-cap"></i> Education</h3>
+                        </div>
+                        <div class="row" id="educationContent">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="projects" class="padding-20">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center card-headline">
+                            <h3><i class="fa fa-project-diagram"></i> Projects</h3>
+                        </div>
+                        <div class="row" id="projectsContent"></div>
+                        <div class="row text-center padding-10" id="designProjects">
+                            <h5 class="card-headline"><span class="fa fa-magic padding-right-5"></span>Design Projects
+                                </h6>
+                                <div>
+                                    <a href="https://www.behance.net/JDcreations" target="_blank">
+                                        <img src="./assets/images/jddesigns.jpg" width="75%">
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="android" class="padding-20">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h3 class="card-headline"><i class="fab fa-google-play"></i> Android Apps </h3>
+                            <h6><a href="https://play.google.com/store/apps/developer?id=JCD+Creations&hl=en&gl=US"
+                                    target="_blank"> View in Play Store</a>
+                            </h6>
+                        </div>
+                        <div class="row" id="androidAppsContent"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="testimonials" class="padding-20">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center card-headline">
+                            <h3><i class="fa fa-medal"></i> Testimonials </h3>
+                        </div>
+                        <div class="row padding-10">
+                            <div class="testimonial-box padding-horizantal-20">
+                                <div class="testimony-content fst-italic">
+                                    <div>"James is dependable and a hard worker with solid problem solving and
+                                        technical
+                                        skills. I was always impressed by James ability to complete the work
+                                        assigned to
+                                        him on time. James not only met deadlines but also explains his programs in
+                                        a
+                                        way that non-experts can easily understand. During his tenure at our
+                                        company,
+                                        he's gone out of his way to mentor newcomers and resolve any problems they
+                                        might
+                                        have. He is very easy to work with and has a good attitude towards work.
+                                        Wish
+                                        youy all the best James"</div>
+                                </div>
+                                <div class="testimony-footer">
+                                    <h6 class="mb0"><a href="https://www.linkedin.com/in/sandeep-khamesra-1b68749"
+                                            target="_blank"><i class="fab fa-linkedin"></i> Sandeep Khamesra</a></h6>
+                                    <p><small>Engineering Manager at Fiserv</small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row padding-10">
+                            <div class="testimonial-box padding-horizantal-20">
+                                <div class="testimony-content fst-italic">
+                                    <div>"James is a great asset to any project. He has a very good on numerous
+                                        technologies, He has a strong personal commitment to delivering client
+                                        requirements, a good business background, a wide range of IT skills, and
+                                        excellent people skills. He can work easily on multiple projects. I wish him
+                                        all
+                                        the very best for his future endeavors."</div>
+                                </div>
+                                <div class="testimony-footer">
+                                    <h6 class="mb0"><a href="https://www.linkedin.com/in/vamsibanka" target="_blank"><i
+                                                class="fab fa-linkedin"></i> Vamsi Banka</a></h6>
+                                    <p><small>Business Intelligence Consultant</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="padding-20">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center card-headline">
+                            <h3><i class="fa fa-address-card"></i> Contact </h3>
+                        </div>
+                        <div class="row text-center padding-10">
+                            <h5><a class="contact-link" href="mailto:james.jdev@gmail.com" target="_blank"><i
+                                        class="fa fa-envelope"></i>
+                                    james.jdev@gmail.com</a></h5>
+                        </div>
+                        <div class="row text-center padding-10">
+                            <h5><a class="contact-link" href="https://wa.me/917259607152" target="_blank"><i
+                                        class="fab fa-whatsapp"></i>
+                                    +91 725 960 7152</a></h5>
+                        </div>
+                        <div class="row text-center padding-10">
+                            <div id="contactsocialLinks"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="resume" class="padding-20">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center card-headline">
+                            <h3><i class="fa fa-file-download"></i> Resume </h3>
+                        </div>
+                        <div class="row text-center padding-10">
+                            <h6>
+                                <a class="contact-link padding-10"
+                                    href="https://drive.google.com/file/d/16zI8LPpSIW6ODVZurERYB-6jyKpGV_Rs/view?usp=sharing"
+                                    target="_blank"><i class="fa fa-file-download"></i> View / download resume</a>
+                            </h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <footer>
+        <div class="small-font text-center">
+            Designed & Developed by James Dev John
+        </div>
+    </footer>
+</body>
+
+</html>
