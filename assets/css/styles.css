@@ -1,7 +1,11 @@
 /*-------------------------------------------------------------*/
+
 /*         Project: Portfolio website - James Dev John         */
+
 /*         Author: James Dev J (james.jdev@gmail.com)          */
+
 /*         Initial version: May 2021                           */
+
 /*-------------------------------------------------------------*/
 
 body {
@@ -19,7 +23,9 @@ body, html {
 }
 
 /*-------------------------------*/
+
 /*         Common Styles         */
+
 /*-------------------------------*/
 
 .padding-left-5 {
@@ -60,7 +66,9 @@ a {
 }
 
 /*-------------------------------*/
+
 /*           Wrappers            */
+
 /*-------------------------------*/
 
 #wrapper {
@@ -103,7 +111,9 @@ a {
 }
 
 /*-------------------------------*/
+
 /*     Sidebar nav styles        */
+
 /*-------------------------------*/
 
 .navbar {
@@ -209,7 +219,9 @@ a {
 }
 
 /*-------------------------------*/
+
 /*       Hamburger-Cross         */
+
 /*-------------------------------*/
 
 .hamburger {
@@ -324,7 +336,9 @@ a {
 }
 
 /*-------------------------------*/
+
 /*            Overlay            */
+
 /*-------------------------------*/
 
 .overlay {
@@ -337,15 +351,75 @@ a {
     right: 0;
     bottom: 0;
     background-color: rgba(250, 250, 250, .8);
+    z-index: 2;
+}
+
+.design-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
     z-index: 1;
 }
 
+.effect-2 {
+    left: 3%;
+    bottom: 20%;
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: topBounce 3s ease-in-out infinite;
+}
+
+.e-ball {
+    height: 15px; width: 15px;
+    border-radius: 50%;
+    background-color: #3b9adb !important;
+}
+
+.e-chain {
+    height: 3px; width: 25px;
+    /* border-radius: 50%; */
+    background-color: #3b9adb !important;
+}
+.e2 {
+    width: 100%;
+    text-align: center; padding-top: 5px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes example {
+    0%   {left:0%; top:0%;}
+    25%  {left:50%; top:0%;}
+    50%  {left:90%; top:0%;}
+    75%  {left:50%; top:0%;}
+    100% {left:0%; top:0%;}
+  }
+
+/* @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;} 
+    100% {background-color:red; left:0px; top:0px;}
+  } */
 /*-------------------------------*/
+
 /*            Others            */
+
 /*-------------------------------*/
 
 .img {
     border-radius: 50%;
+    border: 2px solid #3b9adb;
     /* filter: grayscale(100%); */
     transition: transform .5s, filter 0.5s ease-in-out;
 }

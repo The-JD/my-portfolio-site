@@ -64,12 +64,12 @@ const headings = [
     { id: 'about', name: 'About', icon: 'user' },
     { id: 'experience', name: 'Experience', icon: 'briefcase' },
     { id: 'skills', name: 'Skills', icon: 'stream' },
-    { id: 'education', name: 'Education', icon: 'graduation-cap' },
-    { id: 'projects', name: 'Projects', icon: 'project-diagram' },
+    // { id: 'education', name: 'Education', icon: 'graduation-cap' },
+    // { id: 'projects', name: 'Projects', icon: 'project-diagram' },
     { id: 'android', name: 'Android Apps', icon: 'google-play', isBrand: true },
     { id: 'testimonials', name: 'Testimonials', icon: 'medal' },
     { id: 'contact', name: 'Contact', icon: 'address-card' },
-    { id: 'resume', name: 'Resume', icon: 'file-download' }
+    // { id: 'resume', name: 'Resume', icon: 'file-download' }
 ];
 
 var menuBarContent = "", i;
@@ -82,27 +82,38 @@ for (i = 0; i < headings.length; i++) {
 var experienceContent = "";
 const experience = [
     {
-        id: 1, role: 'Senior Software Engineer', duration: 'May 2018 to Present', tenure: '3 Years', company: 'Centizen Inc, Tirunelveli', url: 'www.centizen.com', imageUrl: 'assets/images/Centizen_Logo_1.png'
+        id: 1, role: 'Front End Developer', duration: 'January 2018 to April 2018', tenure: '4 Months', company: 'Infosys Limited, Mangalore', url: 'www.fiserv.com', imageUrl: 'assets/images/fiserv_logo.png'
     },
     {
-        id: 2, role: 'Senior Systems Engineer', duration: 'January 2018 to April 2018', tenure: '4 Months', company: 'Infosys Limited, Mangalore', url: 'www.infosys.com', imageUrl: 'assets/images/infosys_logo.png'
+        id: 2, role: 'Senior Software Developer', duration: 'May 2018 to Present', tenure: '3 Years', company: 'Centizen Inc, Tirunelveli', url: 'www.centizen.com', imageUrl: 'assets/images/Centizen_Logo_1.png'
+    },
+    // {
+    //     id: 2, role: 'Senior Systems Engineer', duration: 'January 2018 to April 2018', tenure: '4 Months', company: 'Infosys Limited, Mangalore', url: 'www.infosys.com', imageUrl: 'assets/images/infosys_logo.png'
+    // },
+    {
+        id: 3, role: 'Software Engineer', duration: 'May 2016 to December 2017', tenure: '1 Year 8 Months', company: 'Infosys Limited, Mangalore', url: 'www.pwc.com', imageUrl: 'assets/images/pwc_logo.png'
     },
     {
-        id: 3, role: 'Systems Engineer', duration: 'May 2016 to December 2017', tenure: '1 Year 8 Months', company: 'Infosys Limited, Mangalore', url: 'www.infosys.com', imageUrl: 'assets/images/infosys_logo.png'
-    },
-    {
-        id: 4, role: 'Systems Engineer Trainee ', duration: 'December 2015 to April 2016', tenure: '5 Months', company: 'Infosys Limited, Mysore', url: 'www.infosys.com', imageUrl: 'assets/images/infosys_logo.png'
+        id: 4, role: 'Software Engineer Trainee ', duration: 'December 2015 to April 2016', tenure: '5 Months', company: 'Infosys Limited, Mysore', url: 'www.infosys.com', imageUrl: 'assets/images/infosys_logo.png'
     }
 ]
+
+// for (i = 0; i < experience.length; i++) {
+//     experienceContent = experienceContent + `<div class="card1 padding-10 col-lg-3"><div class="row text-center">
+//     <div class="padding-top-5"><img height="50" src="`+ experience[i].imageUrl + `"></div>
+//     <div><strong>` + experience[i].role + `</strong></div>
+//     <div><span class="badge rounded-pill bg-info-pill text-dark">` + experience[i].tenure + `</span></div>
+//     <div><i class="fa fa-calendar-alt"></i> <span class="padding-horizantal-5">` + experience[i].duration + `</span> 
+//     </div>
+//     <div> <i class="fa fa-building"></i> <span class="padding-horizantal-5">`+ experience[i].company + `</span></div>
+//     <div><a href="`+ experience[i].url + `">` + experience[i].url + `</a></div>
+// </div></div><br>`;
+// }
 
 for (i = 0; i < experience.length; i++) {
     experienceContent = experienceContent + `<div class="card1 padding-10 col-lg-3"><div class="row text-center">
     <div class="padding-top-5"><img height="50" src="`+ experience[i].imageUrl + `"></div>
-    <div><strong>` + experience[i].role + `</strong></div>
-    <div><span class="badge rounded-pill bg-info-pill text-dark">` + experience[i].tenure + `</span></div>
-    <div><i class="fa fa-calendar-alt"></i> <span class="padding-horizantal-5">` + experience[i].duration + `</span> 
-    </div>
-    <div> <i class="fa fa-building"></i> <span class="padding-horizantal-5">`+ experience[i].company + `</span></div>
+    <div class="padding-top-5"><i class="fa fa-laptop-code padding-right-5"></i><strong>` + experience[i].role + `</strong></div>
     <div><a href="`+ experience[i].url + `">` + experience[i].url + `</a></div>
 </div></div><br>`;
 }
@@ -298,12 +309,12 @@ window.onload = function () {
     document.getElementById("socialLinksContent").innerHTML = socialLinksContent;
     document.getElementById("menuBar").innerHTML = menuBarContent;
     document.getElementById("experienceContent").innerHTML = experienceContent;
-    document.getElementById("educationContent").innerHTML = educationContent;
+    // document.getElementById("educationContent").innerHTML = educationContent;
     document.getElementById("frontEndTechContent").innerHTML = frontEndTechContent;
     document.getElementById("jsTechContent").innerHTML = jsTechContent;
     document.getElementById("backendTechContent").innerHTML = backendTechContent;
     document.getElementById("otherTechContent").innerHTML = otherTechContent;
-    document.getElementById("projectsContent").innerHTML = projectsContent;
+    // document.getElementById("projectsContent").innerHTML = projectsContent;
     document.getElementById("androidAppsContent").innerHTML = androidAppsContent;
     document.getElementById("contactsocialLinks").innerHTML = socialLinksContent;
 }
