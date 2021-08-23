@@ -57,6 +57,9 @@ $(document).ready(function () {
     $('[data-toggle="offcanvas"]').click(function () {
         $('#wrapper').toggleClass('toggled');
     });
+
+
+    $("#slideshow > div:gt(0)").hide();
 });
 
 
@@ -292,20 +295,12 @@ var introContent = `
     <div class="fst-italic">
         <strong>I love designing and developing</strong>
     </div>
-    <div><span class="fa fa-laptop-code card-headline padding-right-5"></span> Web
-        applications and software products</div>
-    <div><span class="fa fa-mobile-alt card-headline padding-right-5"></span> Android
-        applications</div>
-    <div><span class="fa fa-photo-video card-headline padding-right-5"></span> Digital
-        contents for social media</div>
-    <div><span class="fa fa-magic card-headline padding-right-5"></span> Logos and
-        branding materials</div>
 </div>
 `;
 
 
 window.onload = function () {
-    document.getElementById("introContent").innerHTML = introContent;
+    // document.getElementById("introContent").innerHTML = introContent;
     document.getElementById("socialLinksContent").innerHTML = socialLinksContent;
     document.getElementById("menuBar").innerHTML = menuBarContent;
     document.getElementById("experienceContent").innerHTML = experienceContent;
@@ -319,3 +314,31 @@ window.onload = function () {
     document.getElementById("contactsocialLinks").innerHTML = socialLinksContent;
 }
 
+document.addEventListener("DOMContentLoaded", function (event) {
+    document.documentElement.setAttribute("data-theme", "light");
+
+    // Get our button switcher
+    var themeSwitcher = document.getElementById("theme-switcher");
+
+    // When our button gets clicked
+    themeSwitcher.onclick = function () {
+        // Get the current selected theme, on the first run
+        // it should be `light`
+        var currentTheme = document.documentElement.getAttribute("data-theme");
+
+        // Switch between `dark` and `light`
+        var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+        // Set our currenet theme to the new one
+        document.documentElement.setAttribute("data-theme", switchToTheme);
+    }
+});
+
+setInterval(function () {
+    $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+}, 2000);

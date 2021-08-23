@@ -26,6 +26,9 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="./assets/js/scripts.js"></script>
+    <!-- <script type="text/javascript">
+        $("#slideshow > div:gt(0)").hide();
+    </script> -->
 </head>
 
 <body>
@@ -47,16 +50,19 @@
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-            <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+            <!-- <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
                 <span class="hamb-top"></span>
                 <span class="hamb-middle"></span>
                 <span class="hamb-bottom"></span>
-            </button>
+            </button> -->
             <div class="container">
-                <div id="about" class="padding-20">
+                <div id="about" class="padding-20 padding-top-5">
                     <div class="card">
-                        <div class="card-body">
-                            <div class="text-center padding-10">
+                        <div style="text-align:end">
+                            <h3><i id="theme-switcher" class="fa fa-toggle-on"></i></h3>
+                        </div>
+                        <div class="card-body padding-top-0">
+                            <div class="text-center padding-10 padding-top-0">
                                 <div class="padding-10">
                                     <img class="img" src="assets/images/jamesdev.jpg" height="150">
                                 </div>
@@ -66,14 +72,42 @@
                                 <h6>Graphic & UI/UX Designer</h6>
                             </div>
                             <div class="row text-center">
-                                <div id="introContent"></div>
+                                <!-- <div id="introContent"></div> -->
+                                <div class="my-block">
+                                    <div class="fst-italic">
+                                        <strong>I love designing and developing</strong>
+                                    </div>
+                                    <div id="slideshow" style="margin-top: 10px;">
+                                        <div>
+                                            <div>
+                                                <h3 class="fa fa-laptop-code card-headline padding-right-5"></h3>
+                                                <h4>Websites and Web Applications</h4>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h3 class="fa fa-mobile-alt card-headline padding-right-5"></h3>
+                                                <h4>Android Applications</h4>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h3 class="fa fa-photo-video card-headline padding-right-5"></h3>
+                                                <h4>Digital Contents for Social Media</h4>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h3 class="fa fa-magic card-headline padding-right-5"></h3>
+                                                <h4>Logos and Branding Materials</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="row text-center padding-top-20">
                                 <div id="socialLinksContent"></div>
-                                <div class="e2">
-                                    <!-- <div class="e-ball"></div> -->
-                                    <div class="e-chain"></div>
-                                </div>
+                                <!-- <div class="e2"> <div class="e-chain"></div> </div> -->
                             </div>
                         </div>
                     </div>
